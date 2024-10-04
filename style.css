@@ -1,0 +1,165 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #212529;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+input, textarea, button {
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-3px);
+}
+
+.todo-item h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.todo-item p {
+    margin: 10px 0;
+}
+
+.todo-item .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.todo-item button {
+    flex: 1;
+    max-width: 120px;
+}
+
+.todo-item .complete-btn {
+    background-color: #28a745;
+}
+
+.todo-item .complete-btn:hover {
+    background-color: #218838;
+}
+
+.todo-item .delete-btn {
+    background-color: #dc3545;
+}
+
+.todo-item .delete-btn:hover {
+    background-color: #c82333;
+}
+
+.todo-item .edit-btn {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.todo-item .edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.completed {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+.fade-out {
+    animation: fadeOut 5s forwards;
+    animation-delay: 10s;
+}
+
+@keyframes fadeOut {
+    from { opacity: 0.6; }
+    to { opacity: 0; height: 0; margin: 0; padding: 0; }
+}
+
+#todo-stats, #filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#filter-buttons button {
+    flex: 1;
+    margin: 0 5px;
+}
+
+.event-dot {
+    height: 5px;
+    width: 5px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flatpickr-calendar {
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0;
+    border-top: 1px solid #dee2e6;
+    font-weight: 600;
+    color: #6c757d;
+}

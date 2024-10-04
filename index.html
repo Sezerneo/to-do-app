@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App | Sezer Çoban</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <header>
+        <h1>To-Do App</h1>
+    </header>
+    <main>
+        <form id="todo-form">
+            <input type="text" id="todo-name" placeholder="Görev adı" required>
+            <input type="text" id="todo-datetime" placeholder="Tarih ve Saat" required>
+            <textarea id="todo-description" placeholder="Açıklama"></textarea>
+            <button type="submit">Ekle ➕</button>
+        </form>
+        <div id="todo-stats">
+            <span id="total-todos">Toplam: 0</span>
+            <span id="completed-todos">Tamamlanan: 0</span>
+        </div>
+        <div id="filter-buttons">
+            <button onclick="filterTodos('all')">Tümü</button>
+            <button onclick="filterTodos('active')">Aktif</button>
+            <button onclick="filterTodos('completed')">Tamamlanan</button>
+        </div>
+        <ul id="todo-list"></ul>
+    </main>
+    <footer>
+        <p>Sezer Çoban</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="app.js"></script>
+</body>
+</html>
